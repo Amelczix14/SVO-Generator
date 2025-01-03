@@ -81,7 +81,31 @@ verb_completions = {
     "bake": ["a cake", "bread", "cookies", "pizza", "a pie"],
     "open": ["a door", "a window", "a book", "a box", "an email"],
     "close": ["a door", "a window", "a book", "a file", "eyes"],
-    "feed": ["a cat", "a dog", "a bird", "a baby", "fish"]
+    "feed": ["a cat", "a dog", "a bird", "a baby", "fish"],
+    "swim": ["in the pool", "in the sea", "in the lake", "in the ocean"],
+    "dance": ["solo","salsa", "ballet", "hip-hop", "waltz", "the tango"],
+    "clean": ["the house", "the floor", "the windows", "the kitchen", "the bathroom"],
+    "study": ["mathematics", "history", "biology", "languages", "art"],
+    "shop": ["for groceries", "for clothes", "for shoes", "for gifts", "online"],
+    "travel": ["abroad", "to the mountains", "to the beach", "to a new country", "around the world"],
+    "explore": ["a city", "a forest", "a cave", "the countryside"],
+    "teach": ["others", "math", "science", "music", "history", "art"],
+    "discover": ["a new place", "a hidden talent", "a new hobby", "an invention"],
+    "repair": ["a bike", "a computer", "a watch", "a roof", "a fence"],
+    "call": ["a friend", "a family member", "customer service", "a taxi", "an ambulance", "the police"],
+    "listen": ["to music", "to a podcast", "to the radio", "to an audiobook", "to a lecture"],
+    "hug": ["a friend", "a family member", "a pet", "a teddy bear"],
+    "share": ["an idea", "a meal", "a story", "a photo", "a video"],
+    "visit": ["a friend", "a relative", "a museum", "a park", "a city"],
+    "celebrate": ["a birthday", "a holiday", "a promotion", "an anniversary", "a victory"],
+    "enjoy": ["the sunset", "a concert", "a meal", "a vacation", "a good book"],
+    "organize": ["a party", "a meeting", "a trip", "a closet", "a schedule"],
+    "plant": ["a tree", "flowers", "vegetables", "a garden", "a seed"],
+    "connect": ["to the internet", "with friends", "with family", "to a device", "with nature"],
+    "watch": ["the sunrise", "the sunset", "a performance", "a parade", "the stars"],
+    "follow": ["the rules", "instructions", "a map", "a trend", "someone on social media"],
+    "calculate": ["the total", "the distance", "the time", "the cost", "the score"],
+    "paint": ["a wall", "a fence", "a canvas", "a room", "a sculpture"]
 }
 
 
