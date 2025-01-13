@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Generator</title>
+    <!-- Używamy url_for, aby wskazać ścieżkę do pliku CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="generator-container">
+            <h1>Sentence Generator</h1>
+            <form id="sentenceForm">
+                <div class="options">
+                    <label for="subjectType">Subject type:</label>
+                    <select id="subjectType" onchange="handleSubjectTypeChange()">
+                        <option value="" disabled selected>select a subject type</option>
+                        <option value="pronoun">pronoun</option>
+                        <option value="noun">noun</option>
+                    </select>
+                </div>
+                <div class="options" id="subjectOptions">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" disabled>
+                        <!-- Subject options will be added here dynamically -->
+                    </select>
+                    <button id="button" type="button" onclick="handleSubject()" disabled>Next</button>
+                </div>
+                <div class="options" id="numberOptions" style="display: none;">
+                    <label>Select Number:</label>
+                    <select id="number">
+                        <option value="singular">singular</option>
+                        <option value="plural">plural</option>
+                    </select>
+                    <button type="button" onclick="handleNumber()">Next</button>
+                </div>
+
+                <div class="options" id="determinerOptions" style="display:none;">
+                    <label for="determiner">Select optional demonstrative or possessive pronouns:</label>
+                    <select id="determiner" disabled>
+                        <!-- Determiner options will be added here dynamically -->
+                    </select>
+                    <button type="button" onclick="handleDeterminer()">Next</button>
+                </div>
+
+                <div class="options" id="adjectiveOptions" style="display:none;">
+                    <label for="adjective">Select optional adjective:</label>
+                    <select id="adjective" disabled>
+                        <!-- Adjective options will be added here dynamically -->
+                    </select>
+                    <button type="button" onclick="handleAdjective()">Next</button>
+                </div>
+
+
+                <div class="options" id="verbOptions" style="display:none;">
+                    <label for="verb">Choose a verb:</label>
+                    <select id="verb" disabled>
+                        <!-- Verb options will be added here dynamically -->
+                    </select>
+                </div>
+
+                <div class="options" id="tenseOptions" style="display:none;">
+                    <label for="tense">Choose a tense:</label>
+                    <select id="tense">
+                        <option value="present">present</option>
+                        <option value="past">past</option>
+                        <option value="future">future</option>
+                    </select>
+                    <button type="button" onclick="handleVerbChange()">Next</button>
+                </div>
+
+                <div class="options" id="complementOptions" style="display:none;">
+                    <label for="complement">Choose a complement:</label>
+                    <select id="complement" disabled>
+                        <!-- Complement options will be added here dynamically -->
+                    </select>
+                    <button type="button" onclick="handleComplement()">Next</button>
+                </div>
+
+                <button class="reset" type="button" onclick="handleReset()" style="display:none;">Reset</button>
+            </form>
+
+            <div class="sentence">
+                <h2>Generated Sentence:</h2>
+                <p id="generatedSentence"></p>
+            </div>
+
+        </div>
+        <h5>Please note that the generated sentences may not always make logical sense, but they are grammatically correct.</h5>
+
+    </div>
+
+    <!-- Używamy url_for, aby wskazać ścieżkę do pliku JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
